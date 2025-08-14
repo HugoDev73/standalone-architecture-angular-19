@@ -1,0 +1,22 @@
+// ===================================
+// src/styles/abstracts/_functions.scss
+// ===================================
+
+// Función para convertir px a rem
+@function px-to-rem($px, $base: 16px) {
+  @return ($px / $base) * 1rem;
+}
+
+// Función para spacing con multiplicador
+@function spacing($multiplier: 1) {
+  @return $spacing-md * $multiplier;
+}
+
+// Función para determinar color de contraste
+@function color-contrast($color) {
+  @if (lightness($color) > 50%) {
+    @return $black;
+  } @else {
+    @return $white;
+  }
+}
