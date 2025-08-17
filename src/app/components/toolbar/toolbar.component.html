@@ -1,1 +1,12 @@
-<p>toolbar works!</p>
+<mat-toolbar>
+  <button mat-icon-button aria-label="icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span> {{ nameApp() }} </span>
+  <span class="example-spacer"></span>
+  <div class="p-3">
+    <div matBadge="4" matBadgeOverlap="false" class="badge-contacts">
+      <span>Contactos</span>
+    </div>
+  </div>
+</mat-toolbar>

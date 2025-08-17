@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { InterceptorService } from './core/services/interceptor/interceptor.service';
 import { ApiConfigService } from './core/services/api-config/api-config.service';
 import { Endpoints } from './core/constants/api-endpoints';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ToolbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
