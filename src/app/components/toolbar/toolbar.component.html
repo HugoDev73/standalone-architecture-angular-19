@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <button mat-icon-button aria-label="icon-button with menu icon">
+  <button mat-icon-button aria-label="icon-button with menu icon" (click)="toogleMenu.emit()">
     <mat-icon>menu</mat-icon>
   </button>
   <span> {{ nameApp() }} </span>

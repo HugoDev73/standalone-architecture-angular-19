@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -12,4 +12,5 @@ import {MatBadgeModule} from '@angular/material/badge';
 })
 export class ToolbarComponent {
 nameApp = input('')
+toogleMenu = output()
 }
