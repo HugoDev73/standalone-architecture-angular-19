@@ -1,7 +1,5 @@
+@forward './styles/variables';
+@forward './styles/mixins';
+@forward './styles/typography';
+@forward './styles/typography';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.p-3{
-    padding:  16px;
-}

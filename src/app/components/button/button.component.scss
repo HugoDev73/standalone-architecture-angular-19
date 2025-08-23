@@ -1,0 +1,24 @@
+@use './../../../styles.scss' as *;
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: $font-family-base;
+
+  &--primary {
+    background-color: $color-primary;
+    color: #fff;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: #fff;
+  }
+
+  &--icon {
+    @include flex-center;
+    gap: 0.25rem;
+  }
+}
