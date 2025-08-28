@@ -1,9 +1,10 @@
-<mat-drawer-container class="example-container" [hasBackdrop]="true">
-  <mat-drawer #drawer mode="over">I'm a drawer</mat-drawer>
-  <mat-drawer-content>
-    <app-toolbar [nameApp]="title" (toogleMenu)="drawer.toggle()"></app-toolbar>
-    
-    <app-button></app-button>
-    <router-outlet />
-  </mat-drawer-content>
-</mat-drawer-container>
+<div class="layout">
+  <app-toolbar [nameApp]="title" (toogleMenu)="drawer.toggle()"></app-toolbar>
+
+  <mat-drawer-container class="layout__content" [hasBackdrop]="true">
+    <mat-drawer #drawer mode="over">I'm a drawer</mat-drawer>
+    <mat-drawer-content>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

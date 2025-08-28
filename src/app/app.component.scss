@@ -1,8 +1,11 @@
-.example-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #eee;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh; 
+}
+
+.layout__content {
+  flex: 1;
+  overflow: auto;
 }
